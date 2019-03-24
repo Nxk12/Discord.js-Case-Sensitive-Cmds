@@ -1,0 +1,23 @@
+I got bored so i made this...
+
+#1: Use if you have a command handler
+
+If you have a bot command handler create a new event called message.js! Then do the export line and after that do the program! 
+If you do not know what the export line is it is what starts the command. Mine looks like this: module.exports = (client, message) => {
+I put it at the very start of the code after that paste the code right after it and then finish it! This will make every command done 
+be Case Sensitive!
+
+#2: If the code is on the 1 main file do this! (I dont reccomend that cause your bot gets all glitchy i would learn a command handler if i 
+was you)
+
+If the code is on 1 line after you do the Call Packages lines and right after you do the client.on("message", (message) => { line right 
+a line down paste the program and then do your files! The line of code also makes it so the bot cant activate i'ts own commands because if
+your command was 
+
+if (message.content.includes("Ping")) {
+message.channel.send("You said "Ping" so i say Pong!);
+
+As you see the bots message includes Ping so the bot will activate its own command! so the "if (message.author.bot) return;" makes
+it so the bot cant activate its own command and cause a massive raid of 5 messages per second!
+
+That is it for this bye!
